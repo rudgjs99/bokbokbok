@@ -1,41 +1,26 @@
 {
-	"schemaVersion": 1,
-	"id": "custommob",
-	"version": "${version}",
-	"name": "custommob",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/custommob/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.Custommob"
-		],
-		"client": [
-			"com.example.CustommobClient"
-		]
-	},
-	"mixins": [
-		"custommob.mixins.json",
-		{
-			"config": "custommob.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "bokbokbok",
+  "version": "${version}",
+  "name": "BokBokBok Transformation Project",
+  "description": "Custom ability handling for transformation survival series.",
+  "authors": [
+    "Project Lead rudgjs99"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bokbokbok/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.rudgjs99.bokbokbok.Bokbokbok"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "identity": ">=3.2.0"
+  }
 }
